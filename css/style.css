@@ -123,6 +123,10 @@ body{
 .dash-box{
   text-align: center;
 }
+
+.modal-title{
+  text-align: center;
+}
 /* sizing */
 @media (max-width: 767px) {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {

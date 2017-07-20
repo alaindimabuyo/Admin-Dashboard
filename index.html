@@ -12,6 +12,7 @@
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <script src="https://cdn.ckeditor.com/4.7.1/standard/ckeditor.js"></script>
 
   </head>
 
@@ -208,21 +209,22 @@
                 </div>
 
                   <div class="modal-body">
-                    <div class="input-group col-lg-6">
+                    <div class="input-group col-xs-12 .col-sm-6 .col-lg-8">
                         <h4>Page Title</h4>
                         <input type="text" class="form-control" placeholder="Page Title" aria-describedby="basic-addon1">
                       </div>
 
-                      <div class="input-group col-lg-6">
+                      <div class="input-group col-xs-12 .col-sm-6 .col-lg-8">
                         <h4>Page Body</h4>
-                        <input type="text" class="form-control" placeholder="Page Body" aria-describedby="basic-addon1">
+
+                        <textarea name="editor1" class="form-control" placeholder="Page Body" aria-describedby="basic-addon1"> </textarea>
                       </div>
 
                           <span >
                             <h6><input type="checkbox" >Published</h4>
                           </span>
 
-                      <div class="input-group col-lg-6">
+                      <div class="input-group col-xs-12 .col-sm-6 .col-lg-8">
                           <h4>Tags</h4>
                           <input type="text" class="form-control" placeholder="Page Tags" aria-describedby="basic-addon1">
                       </div>
@@ -238,7 +240,11 @@
 
                   <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="btn btn-primary main-color-bg">Save changes</button>
+
+                    <script>
+                       CKEDITOR.replace( 'editor1' );
+                   </script>
                 </div>
               </form>
             </div><!-- /.modal-content -->
